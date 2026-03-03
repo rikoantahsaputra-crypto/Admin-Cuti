@@ -569,7 +569,7 @@ function render(){
   <div class="label">Status</div>
   <select id="status">
     <option ${d.status==="DIAJUKAN" ? "selected" : ""}>DIAJUKAN</option>
-    <option ${d.status==="PROSES TTD" ? "selected" : ""}>PROSES TTD</option>
+    <option ${d.status==="TIDAK LENGKAP" ? "selected" : ""}>KIRIM ULANG, DAFTAR PENGAJUAN TTD SAMPAI KABID/KABAG</option>
     <option ${d.status==="PERSARATAN" ? "selected" : ""}>UPLOAD ULANG, LEMBAR PENGAJUAN HARUS TTD SAMPAI KABID/KABAG</option>
     <option ${d.status?.startsWith("SUDAH JADI") ? "selected" : ""}>
       SUDAH JADI, DI RIWAYAT, UPLOAD MELALUI ADMIN BIDANG
